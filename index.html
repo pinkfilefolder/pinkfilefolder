@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>janggo mahmud</title>
+    <link rel="icon" type="image/x-icon" href="https://img.sanishtech.com/u/27c8dbcf99277271d5b95726d6894717.png">
+    
+    <style>
+        /* Reset & Basic Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #fecce7;
+            color: #333;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 1em;
+            margin-bottom: 15px;
+            white-space: pre-line;
+        }
+
+        /* Dropdown Menu */
+        select {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            background-color: #ff99d0;
+            color: #ff1493;
+            border: 2px solid #ff1493;
+            padding: 8px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        /* Links */
+        a {
+            color: deeppink;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:visited {
+            color: deeppink;
+        }
+
+        a:hover {
+            color: lime;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        /* Grid Container for Posts */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        /* Post Styling */
+        .post {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            overflow: hidden;
+        }
+
+        .post img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
+
+        .post-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ff1493;
+        }
+
+        .caption {
+            font-size: 0.95em;
+            margin-top: 10px;
+            color: #666;
+        }
+
+        blockquote {
+            font-style: italic;
+            margin: 15px 0;
+            padding-left: 15px;
+            border-left: 3px solid #ff99d0;
+        }
+
+        /* Text Selection Styling */
+        ::selection {
+            background: #ff99d0;
+            color: #fff;
+        }
+
+        ::-moz-selection {
+            background: #ff99d0;
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ff99d0;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            margin: 0 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <img src="https://i.imgur.com/1d5i8Py.gif" alt="Pink file folder decorative gif">
+        <img src="https://i.ibb.co/rfRV2xmm/Untitled-design-removebg-preview.png" alt="Pink file folder">
+        
+        <p>
+            hi!! my name is<br>
+            <strong>janggo mahmud</strong><br>
+            (she/her, b. 1998, new york city)<br>
+            <br>
+            i'm a
+        </p>
+
+        <select name="role-menu" aria-label="Select your role">
+            <option value="">hyperfemme ephemerist</option>
+            <option value="">new media & performance art curator</option>
+            <option value="">art world darling wannabe</option>
+            <option value="">social work student dropout</option>
+            <option value="">former recruited candidate for public office</option>
+        </select>
+
+        <p>
+            i work <a href="https://performancespacenewyork.org/">@performance space new york</a><br>
+            & this is my blog of my musings 💕
+        </p>
+    </header>
+
+    <!-- Social & Navigation Links -->
+    <nav class="nav-links">
+        <a href="http://instagram.com/janggoooooo">@janggoooooo</a> •
+        <a href="/exhibitions">exhibitions i worked on previously</a> •
+        <a href="/aboutme">more about meeeeeeee</a> •
+        <a href="/">mainpage</a>
+    </nav>
+
+    <!-- Main Content: Grid of Posts -->
+    <div class="grid-container">
+        <!-- {block:Posts} -->
+        <!-- Text Post Example -->
+        <div class="post">
+            <div class="post-title">Post Title</div>
+            <p>Your post content goes here.</p>
+        </div>
+
+        <!-- Photo Post Example -->
+        <div class="post">
+            <img src="{PhotoURL-500}" alt="Post image">
+            <div class="caption">{Caption}</div>
+        </div>
+
+        <!-- Quote Post Example -->
+        <div class="post">
+            <blockquote>"{Quote}"</blockquote>
+            <p>— {Source}</p>
+        </div>
+        <!-- {/block:Posts} -->
+    </div>
+
+    <!-- Pagination Footer -->
+    <footer>
+        <!-- {block:Pagination} -->
+        <!-- {block:PreviousPage} -->
+        <a href="{PreviousPage}">← Previous</a>
+        <!-- {/block:PreviousPage} -->
+        
+        <!-- {block:NextPage} -->
+        <a href="{NextPage}">Next →</a>
+        <!-- {/block:NextPage} -->
+        <!-- {/block:Pagination} -->
+    </footer>
+</body>
+</html>
